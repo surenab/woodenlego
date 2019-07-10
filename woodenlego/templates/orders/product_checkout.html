@@ -1,0 +1,480 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Checkout</title>
+		<link rel="icon" href="favicon.ico">
+		<!-- JqueryUI -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/jquery-ui.css" %}">
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.min.css" %}">
+		<!-- Awesome font icons -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/font-awesome.min.css" %}" media="screen">
+		<!-- Owlcoursel -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/owl-coursel/owl.carousel.css" %}">
+		<link rel="stylesheet" type="text/css" href="{% static "css/owl-coursel/owl.transitions.css" %}">
+		<!-- Magnific-popup -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/magnific-popup/magnific-popup.css" %}">
+		<!-- Style -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}" media="screen">
+		<!-- Fw -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/fw.css" %}" media="screen">
+	</head>
+	<body>
+		<div class="preloader">
+			<i class="fa fa-spinner"></i>
+		</div>
+		{% include "website_header.html" %}
+		<!-- Breadcrumb -->
+		<div class="container">
+			<ul class="breadcrumb">
+				<li><a href="#"><i class="fa fa-home m-r-5"></i>Home</a></li>
+				<li><a href="#">Shopping cart</a></li>
+				<li>Checkout</li>
+			</ul>
+		</div>
+		<!-- Checkout -->
+		<section class="m-t-0">
+			<div class="container">
+				<div class="thumb p-30">
+					<div id="content">
+						<h2 class="title">Checkout</h2>
+						<div class="panel-group">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="#collapse0" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed" aria-expanded="false">Step 1: Checkout Options
+											<i class="fa fa-caret-down"></i>
+										</a>
+									</h4>
+								</div>
+								 <div id="collapse0" class="panel-collapse collapse in" role="tabpanel">
+									<div class="panel-body">
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="bore p-40 p-xs-20">
+													<h3 class="title">New Customer</h3>
+													<p><strong>Register Account</strong></p>
+													<p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p>
+													<a href="#" class="btn ht-btn bg-3 m-t-20">Continue</a>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="bore p-40 p-xs-20">
+													<h3 class="title">Login</h3>
+													<p><strong>I am a returning customer</strong></p>
+													<form>
+														<div class="form-group">
+															<label class="control-label f-normal" for="input-email">E-Mail Address</label>
+															<input type="text" name="email" value="" placeholder="E-Mail Address" id="input-email" class="form-control form-item">
+														</div>
+														<div class="form-group m-t-30">
+															<label class="control-label f-normal" for="input-password">Password</label>
+															<input type="password" name="password" value="" placeholder="Password" id="input-password" class="form-control form-item">
+															<a class="f-normal m-b-30" href="#">Forgotten Password</a>
+														</div>
+														<button type="submit" class="btn ht-btn bg-3 m-t-20">Login</button>
+													</form>
+												</div>
+											</div>
+										 </div>
+									</div>
+								</div>
+							</div>
+							<!--panel-->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="#collapse1" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed" aria-expanded="false">Step 2: Billing Details 
+											<i class="fa fa-caret-down"></i>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse1" class="panel-collapse collapse" role="tabpanel">
+									<div class="panel-body">
+										<form class="form-horizontal">
+											<div class="radio">
+												<label>
+													<input type="radio" name="payment_address" value="existing" checked="checked">
+													I want to use an existing address
+												</label>
+											</div>
+											<div id="payment-existing">
+												<select name="address_id" class="form-control form-item p-t-15">
+													<option value="1" selected="selected">Nguyen Khiem, 54/4 Tay Nam, Gia ki Da Nang, Viet Nam</option>
+												</select>
+											</div>
+											<div class="radio">
+												<label>
+													<input type="radio" name="payment_address" value="new">
+													I want to use a new address
+												</label>
+											</div>
+											<br>
+											<div id="payment-new" style="display: none;">
+												<div class="form-group required">
+													<label class="col-sm-2 control-label" for="input-payment-firstname">First Name</label>
+													<div class="col-sm-10">
+														<input type="text" name="firstname" value="" placeholder="First Name" id="input-payment-firstname" class="form-control form-item">
+													</div>
+												</div>
+												<div class="form-group required">
+													<label class="col-sm-2 control-label" for="input-payment-lastname">Last Name</label>
+													<div class="col-sm-10">
+														<input type="text" name="lastname" value="" placeholder="Last Name" id="input-payment-lastname" class="form-control form-item">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-sm-2 control-label" for="input-payment-company">Company</label>
+													<div class="col-sm-10">
+														<input type="text" name="company" value="" placeholder="Company" id="input-payment-company" class="form-control form-item">
+													</div>
+												</div>
+												<div class="form-group required">
+													<label class="col-sm-2 control-label" for="input-payment-address-1">Address 1</label>
+													<div class="col-sm-10">
+														<input type="text" name="address_1" value="" placeholder="Address 1" id="input-payment-address-1" class="form-control form-item">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-sm-2 control-label" for="input-payment-address-2">Address 2</label>
+													<div class="col-sm-10">
+														<input type="text" name="address_2" value="" placeholder="Address 2" id="input-payment-address-2" class="form-control form-item">
+													</div>
+												</div>
+												<div class="form-group required">
+													<label class="col-sm-2 control-label" for="input-payment-city">City</label>
+													<div class="col-sm-10">
+														<input type="text" name="city" value="" placeholder="City" id="input-payment-city" class="form-control form-item">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-sm-2 control-label" for="input-payment-postcode">Post Code</label>
+													<div class="col-sm-10">
+														<input type="text" name="postcode" value="" placeholder="Post Code" id="input-payment-postcode" class="form-control form-item">
+													</div>
+												</div>
+												<div class="form-group required">
+													<label class="col-sm-2 control-label" for="input-payment-country">Country</label>
+													<div class="col-sm-10">
+														<select name="country_id" id="input-payment-country" class="form-control form-item">
+															<option value="">Please Select</option>
+															<option value="0">Name 1</option>
+															<option value="1">Name 2</option>
+															<option value="2">Name 3</option>
+															<option value="3">Name 4</option>
+															<option value="4">Name 5</option>
+															<option value="5">Name 6</option>
+															<option value="6">Name 7</option>
+															<option value="7">Name 8</option>
+															<option value="8">Name 9</option>
+															<option value="9">Name 10</option>
+														</select> 
+													</div>
+												</div>
+												<div class="form-group required">
+													<label class="col-sm-2 control-label" for="input-payment-zone">Region / State</label>
+													<div class="col-sm-10">
+														<select name="zone_id" id="input-payment-zone" class="form-control">
+															<option value="">Please Select</option>
+															<option value="0">Name 1</option>
+															<option value="1">Name 2</option>
+															<option value="2">Name 3</option>
+															<option value="3">Name 4</option>
+															<option value="4">Name 5</option>
+															<option value="5">Name 6</option>
+															<option value="6">Name 7</option>
+															<option value="7">Name 8</option>
+															<option value="8">Name 9</option>
+															<option value="9">Name 10</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="buttons clearfix">
+												<div class="pull-right">
+													<button type="button" class="btn ht-btn bg-3">Continue</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<!--panel-->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="#collapse2" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed" aria-expanded="false">Step 3: Delivery Details 
+											<i class="fa fa-caret-down"></i>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse2" class="panel-collapse collapse" role="tabpanel">
+									<div class="panel-body">
+										<form class="form-horizontal">
+											<div class="radio">
+												<label>
+													<input type="radio" name="shipping_address" value="existing" checked="checked">
+													I want to use an existing address
+												</label>
+											</div>
+											<div id="shipping-existing">
+												<select name="address_id" class="form-control form-item">
+													<option value="1" selected="selected">Nguyen Khiem,am, Dong Nai, Da Nang, Viet Nam</option>
+												</select>
+											</div>
+											<div class="radio">
+												<label>
+													<input type="radio" name="shipping_address" value="new">
+													I want to use a new address
+												</label>
+											</div>
+											<br>
+											<div id="shipping-new" style="display: none;">
+												<div class="form-group required">
+													<label class="col-sm-2 control-label" for="input-shipping-firstname">First Name</label>
+													<div class="col-sm-10">
+														<input type="text" name="firstname" value="" placeholder="First Name" id="input-shipping-firstname" class="form-control form-item">
+													</div>
+												</div>
+												<div class="form-group required">
+													<label class="col-sm-2 control-label" for="input-shipping-lastname">Last Name</label>
+													<div class="col-sm-10">
+														<input type="text" name="lastname" value="" placeholder="Last Name" id="input-shipping-lastname" class="form-control form-item">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-sm-2 control-label" for="input-shipping-company">Company</label>
+													<div class="col-sm-10">
+														<input type="text" name="company" value="" placeholder="Company" id="input-shipping-company" class="form-control form-item">
+													</div>
+												</div>
+												<div class="form-group required">
+													<label class="col-sm-2 control-label" for="input-shipping-address-1">Address 1</label>
+													<div class="col-sm-10">
+														<input type="text" name="address_1" value="" placeholder="Address 1" id="input-shipping-address-1" class="form-control form-item">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-sm-2 control-label" for="input-shipping-address-2">Address 2</label>
+													<div class="col-sm-10">
+														<input type="text" name="address_2" value="" placeholder="Address 2" id="input-shipping-address-2" class="form-control form-item">
+													</div>
+												</div>
+												<div class="form-group required">
+													<label class="col-sm-2 control-label" for="input-shipping-city">City</label>
+													<div class="col-sm-10">
+														<input type="text" name="city" value="" placeholder="City" id="input-shipping-city" class="form-control form-item">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-sm-2 control-label" for="input-shipping-postcode">Post Code</label>
+													<div class="col-sm-10">
+														<input type="text" name="postcode" value="810000" placeholder="Post Code" id="input-shipping-postcode" class="form-control form-item">
+													</div>
+												</div>
+												<div class="form-group required">
+													<label class="col-sm-2 control-label" for="input-shipping-country">Country</label>
+													<div class="col-sm-10">
+														<select name="country_id" id="input-shipping-country" class="form-control form-item">
+															<option value="">Please Select</option>
+															<option value="0">Name 1</option>
+															<option value="1">Name 2</option>
+															<option value="2">Name 3</option>
+															<option value="3">Name 4</option>
+															<option value="4">Name 5</option>
+															<option value="5">Name 6</option>
+															<option value="6">Name 7</option>
+															<option value="7">Name 8</option>
+															<option value="8">Name 9</option>
+															<option value="9">Name 10</option>
+														</select> 
+													</div>
+												</div>
+												<div class="form-group required">
+													<label class="col-sm-2 control-label" for="input-shipping-zone">Region / State</label>
+													<div class="col-sm-10">
+														<select name="zone_id" id="input-shipping-zone" class="form-control form-item">
+															<option value="">Please Select</option>
+															<option value="0">Name 1</option>
+															<option value="1">Name 2</option>
+															<option value="2">Name 3</option>
+															<option value="3">Name 4</option>
+															<option value="4">Name 5</option>
+															<option value="5">Name 6</option>
+															<option value="6">Name 7</option>
+															<option value="7">Name 8</option>
+															<option value="8">Name 9</option>
+															<option value="9">Name 10</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="buttons clearfix">
+												<div class="pull-right">
+													<button type="button" class="btn ht-btn bg-3">Continue</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<!--panel-->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#collapse3" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed" aria-expanded="false">Step 4: Delivery Method <i class="fa fa-caret-down"></i></a></h4>
+								</div>
+								<div id="collapse3" class="panel-collapse collapse" role="tabpanel">
+									<div class="panel-body">
+										<p>Please select the preferred shipping method to use on this order.</p>
+										<p><strong>Flat Rate</strong></p>
+										<div class="radio">
+											<label>
+												<input type="radio" name="shipping_method" value="flat.flat" checked="checked">
+												Flat Shipping Rate - $5.00
+											</label>
+										</div>
+										<p>
+											<strong>Add Comments About Your Order</strong>
+										</p>
+										<p>
+											<textarea name="comment" rows="8" class="form-control"></textarea>
+										</p>
+										<div class="buttons">
+											<div class="pull-right">
+												<button type="button" class="btn ht-btn bg-3">Continue</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--panel-->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#collapse4" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed" aria-expanded="false">Step 5: Payment Method <i class="fa fa-caret-down"></i></a></h4>
+								</div>
+								<div id="collapse4" class="panel-collapse collapse" role="tabpanel">
+									<div class="panel-body"><p>Please select the preferred payment method to use on this order.</p>
+										<div class="radio">
+											<label>
+												<input type="radio" name="payment_method" value="cod" checked="checked">
+												Cash On Delivery      	
+											</label>
+										</div>
+										<p>
+											<strong>Add Comments About Your Order</strong>
+										</p>
+										<p>
+											<textarea name="comment" rows="8" class="form-control"></textarea>
+										</p>
+										<div class="buttons">
+											<div class="pull-right">I have read and agree to the
+												<a href="#" class="agree">
+													<b>Terms &amp; Conditions</b>
+												</a>
+												<input type="checkbox" name="agree" value="1">
+												<button type="button" class="btn ht-btn bg-3">Continue</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--panel-->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="#collapse5" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed" aria-expanded="false">Step 6: Confirm Order
+											<i class="fa fa-caret-down"></i>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse5" class="panel-collapse collapse" role="tabpanel">
+									<div class="panel-body">
+										<div class="table-responsive">  
+											<form>
+												<div>
+													<div class="table-div">
+														<div class="row m-0 table-heading">
+															<div class="col col-xs-1"><strong>Image</strong></div>
+															<div class="col col-xs-2"><strong>Model</strong></div>
+															<div class="col col-xs-2"><strong>Quantity</strong></div>
+															<div class="col col-xs-2"><strong>Unit Price</strong></div>
+															<div class="col col-xs-2"><strong>Total</strong></div>
+														</div>
+														{% for item in cart %}
+															{% with product=item.product %}
+																<div class="row m-0 table-content">
+																	<div class="col col-xs-1">
+																		<a href="{{ request.scheme }}://{{ request.get_host }}/products/{{product.id}}"><img src="/{{product.mainimage.url}}" width="70" alt="product" title="{{product.header}}"></a>
+																	</div>
+																	<div class="col col-xs-2"><a href="{{ request.scheme }}://{{ request.get_host }}/products/{{product.id}}">{{product.model}}</a></div>
+																	<div class="col col-xs-2">{{item.quantity}}</div>
+																	<div class="col col-xs-2">֏{{item.price}}</div>
+																	<div class="col col-xs-2">֏{{item.total_price}}</div>
+																</div><!--end row-->
+															{%endwith%}
+														{%endfor%}
+													</div>
+												</div>
+
+
+
+												<div class="row">
+													<div class="col-xs-5 pull-right">
+														<div class="total table-div">
+															<ul class="table-content">
+																<li class="row m-0">
+																	<div class="col col-xs-6 text-right">
+																		<strong class=" text-right">Sub-Total:</strong>
+																	</div>
+																	<div class="col col-xs-6">
+																		֏{{cart.get_total_price}}
+																	</div>
+																</li>
+																<li class="row m-0">
+																	<div class="col col-xs-6">
+																		<strong>Eco Tax (0):</strong>
+																	</div>
+																	<div class="col col-xs-6">
+																		֏{{cart.get_shipping_price}}
+																	</div>
+																</li>
+																<li class="row m-0">
+																	<div class="col col-xs-6">
+																		<strong>Total:</strong>
+																	</div>
+																	<div class="col col-xs-6">
+																		֏{{cart.get_with_shipping_price}}
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+										<div class="buttons m-t-30">
+											<div class="pull-right">
+												<button type="button" class="btn ht-btn bg-3">Confirm Order</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--/panel-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Process -->
+		{% include "website_process.html" %}
+		<!-- Footer -->
+		{% include "website_footer.html" %}
+		<!-- jQuery -->
+		{% include "website_js.html" %}
+	</body>
+</html>

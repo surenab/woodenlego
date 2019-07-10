@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Blog detail</title>
+		<link rel="icon" href="favicon.ico">
+		<!-- JqueryUI -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/jquery-ui.css" %}">
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.min.css" %}">
+		<!-- Awesome font icons -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/font-awesome.min.css" %}" media="screen">
+		<!-- Owlcoursel -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/owl-coursel/owl.carousel.css" %}">
+		<link rel="stylesheet" type="text/css" href="{% static "css/owl-coursel/owl.transitions.css" %}">
+		<!-- Magnific-popup -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/magnific-popup/magnific-popup.css" %}">
+		<!-- Style -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}" media="screen">
+		<!-- Fw -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/fw.css" %}" media="screen">
+	</head>
+	<body>
+		<div class="preloader">
+			<i class="fa fa-spinner"></i>
+		</div>
+		{% include "website_header.html" %}
+		<!-- Breandcrumb -->
+		<div class="container">
+			<ul class="breadcrumb">
+				<li><a href="#"><i class="fa fa-home m-r-5"></i>Home</a></li>
+				<li><a href="#">Blog</a></li>
+				<li>Lorem ipsum dolor sit</li>
+			</ul>
+		</div>
+		<!-- Blog detail -->
+		<section class="m-t-0">
+			<div class="container">
+				<div class="thumb p-30 p-xs-0">
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="blog-item blog-item-img-border m-b-60">
+								<div class="blog-img">
+									<img src="{% static "images/default3.png" %}" alt="image">
+								</div>
+								<div class="blog-caption">
+									<ul class="blog-date blog-date-left">
+										<li><a href="#">Payment</a></li>
+										<li><i class="fa fa-clock-o"></i>May 06, 2016</li>
+										<li><a href="#"><i class="fa fa-comments-o"></i>3</a></li>
+									</ul>
+									<h1 class="blog-heading f-40">Lorem ipsum dolor sit amet conse</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+								</div>
+							</div>
+							<!-- Tags -->
+							<ul class="tags color-inher clearfix">
+								<li class="p-t-5"><label>Tag:</label></li>
+								<li><a href="#">Toys</a></li>
+								<li><a href="#">Clother</a></li>
+								<li><a href="#">Book&music</a></li>
+								<li><a href="#">Game</a></li>
+							</ul>
+							<!-- Social icon -->
+							<div class="panel-share-blog clearfix m-t-30 p-10 p-l-0">
+								<ul class="list-inline pull-left">
+									<li><a href="#"><i class="fa fa-link icon icon-2x icon-cir"></i></a></li>
+									<li><a href="#"><i class="fa fa-phone icon icon-2x icon-cir"></i></a></li>
+									<li><a href="#"><i class="fa fa-cogs icon icon-2x icon-cir"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook icon icon-2x icon-cir"></i></a></li>
+									<li><a href="#"><i class="fa fa-google icon icon-2x icon-cir"></i></a></li>
+								</ul>
+								<ul class="panel-blog-info list-inline pull-right m-t-10">
+									<li><a href="#"><i class="fa fa-heart-o"></i> 10 LIKES</a></li>
+									<li><a href="#"><i class="fa fa-comment-o"></i> 10 COMMENTS</a></li>
+								</ul>
+							</div>
+							<div class="line"></div>
+							<!-- List comment -->
+							<div class="list-comment">
+								<h4>10 comments</h4>
+								<!-- comment-item -->
+								<div class="comment-item">
+									<a href="#" class="comment-img">
+										<img src="{% static "images/default.png" %}" alt="image">
+									</a>
+									<div class="comment-txt">
+										<div class="auth">
+											<div class="comment-heading">
+												<h5><a href="#">William smith</a></h5>
+												<span>01th May 2017 -12.00 AM</span>
+											</div>
+										</div>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temp incidunt ut labore et dolore magnaLorem ipsum dolor sit</p>
+										<a href="#" class="reply">Reply</a>
+									</div>
+								</div>
+								<!-- comment-item -->
+								<div class="comment-item">
+									<a href="#" class="comment-img">
+										<img src="{% static "images/default.png" %}" alt="image">
+									</a>
+									<div class="comment-txt">
+										<div class="auth">
+											<div class="comment-heading">
+												<h5><a href="#">William smith</a></h5>
+												<span>01th May 2017 -12.00 AM</span>
+											</div>
+										</div>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temp incidunt ut labore et dolore magna.</p>
+										<a href="#" class="reply">Reply</a>
+									</div>
+								</div>
+								<!-- comment-item -->
+								<div class="comment-item">
+									<a href="#" class="comment-img">
+										<img src="{% static "images/default.png" %}" alt="image">
+									</a>
+									<div class="comment-txt">
+										<div class="auth">
+											<div class="comment-heading">
+												<h5><a href="#">William smith</a></h5>
+												<span>01th May 2017 -12.00 AM</span>
+											</div>
+										</div>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmolore magna.</p>
+										<a href="#" class="reply">Reply</a>
+									</div>
+								</div>
+								<!-- comment-item -->
+								<div class="comment-item">
+									<a href="#" class="comment-img">
+										<img src="{% static "images/default.png" %}" alt="image">
+									</a>
+									<div class="comment-txt">
+										<div class="auth">
+											<div class="comment-heading">
+												<h5><a href="#">William smith</a></h5>
+												<span>01th May 2017 -12.00 AM</span>
+											</div>
+										</div>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temp incidunt ut labore et dolore magna.</p>
+										<a href="#" class="reply">Reply</a>
+									</div>
+								</div>
+								<!-- comment-item -->
+								<div class="comment-item">
+									<a href="#" class="comment-img">
+										<img src="{% static "images/default.png" %}" alt="image">
+									</a>
+									<div class="comment-txt">
+										<div class="auth">
+											<div class="comment-heading">
+												<h5><a href="#">William smith</a></h5>
+												<span>01th May 2017 -12.00 AM</span>
+											</div>
+										</div>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temp incidunt ut labore et dolore magnaLorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temp incidunt ut labore et dolore magnaLorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temp incidunt ut labore et dolore magna.</p>
+										<a href="#" class="reply">Reply</a>
+									</div>
+								</div>
+								<!-- comment-item -->
+								<div class="comment-item">
+									<a href="#" class="comment-img">
+										<img src="{% static "images/default.png" %}" alt="image">
+									</a>
+									<div class="comment-txt">
+										<div class="auth">
+											<div class="comment-heading">
+												<h5><a href="#">William smith</a></h5>
+												<span>01th May 2017 -12.00 AM</span>
+											</div>
+										</div>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temp incidunt ut labore et dolore magna.</p>
+										<a href="#" class="reply">Reply</a>
+									</div>
+								</div>
+								<a href="#" class="more-comment">More 4 comment</a>
+							</div>
+							<!-- Form comment -->
+							<div class="form-comment p-b-15">
+								<h4>Leave a reply</h4>
+								<form>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" class="form-control form-item" name="name" placeholder="Name">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" class="form-control form-item" name="email" placeholder="Email">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<textarea class="form-control form-item h-200" rows="3" name="content" placeholder="Content"></textarea>
+									</div>
+									<button type="submit" name="submit" class="btn ht-btn bg-3 m-t-20">Post comment</button>
+								</form>
+							</div>
+						</div>	
+						<!-- Blog category -->
+						<div class="col-sm-4">
+							<div class="category m-b-30">
+								<h3 class="title p-b-0">Categories</h3>
+								<ul class="list">
+									<li><a href="#">Events</a></li>
+									<li><a href="#">News</a></li>
+									<li><a href="#">Buyer</a></li>
+									<li><a href="#">Payment</a></li>
+									<li><a href="#">Valentine's day</a></li>
+								</ul>
+							</div>
+							<div class="category m-b-30">
+								<h3 class="title p-b-0">Archives</h3>
+								<ul class="list">
+									<li><a href="#">1985</a></li>
+									<li><a href="#">2000</a></li>
+									<li><a href="#">2005</a></li>
+									<li><a href="#">2015</a></li>
+									<li><a href="#">2017</a></li>
+								</ul>
+							</div>
+							<div class="m-b-30">
+								<h3 class="title">Post relate</h3>
+								<div class="blog-item blog-item-border">
+									<a href="#">
+										<img src="{% static "images/default.png" %}" alt="image">
+									</a>
+									<div class="blog-caption">
+										<ul class="blog-date blog-date-left">
+											<li><a href="#">Payment</a></li>
+											<li><i class="fa fa-clock-o"></i>May 06, 2016</li>
+											<li><a href="#"><i class="fa fa-comments-o"></i>3</a></li>
+										</ul>
+										<h3 class="blog-heading f-20">
+											<a href="#">Lorem ipsum dolor sit sicing elit</a>
+										</h3>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temp</p>
+										<a href="#" class="btn ht-btn bg-3">Read more</a>
+									</div>
+								</div>
+								<div class="blog-item blog-item-border">
+									<a href="#">
+										<img src="{% static "images/default.png" %}" alt="image">
+									</a>
+									<div class="blog-caption">
+										<ul class="blog-date blog-date-left">
+											<li><a href="#">Payment</a></li>
+											<li><i class="fa fa-clock-o"></i>Feb 08, 2016</li>
+											<li><a href="#"><i class="fa fa-comments-o"></i>3</a></li>
+										</ul>
+										<h3 class="blog-heading f-20">
+											<a href="#">Lorem ipsum dolor sit sicing elit</a>
+										</h3>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temp</p>
+										<a href="#" class="btn ht-btn bg-3">Read more</a>
+									</div>
+								</div>
+								<div class="blog-item blog-item-border">
+									<a href="#">
+										<img src="{% static "images/default.png" %}" alt="image">
+									</a>	
+									<div class="blog-caption">
+										<ul class="blog-date blog-date-left">
+											<li><a href="#">Payment</a></li>
+											<li><i class="fa fa-clock-o"></i>Nov 012, 2016</li>
+											<li><a href="#"><i class="fa fa-comments-o"></i>3</a></li>
+										</ul>
+										<h3 class="blog-heading f-20">
+											<a href="#">Lorem ipsum dolor sit sicing elit</a>
+										</h3>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempg</p>
+										<a href="#" class="btn ht-btn bg-3">Read more</a>
+									</div>
+								</div>
+							</div>
+							<div class="category category-1">
+								<h3 class="title">Tags cloud</h3>
+								<ul class="tags color-inher">
+									<li><a href="#">Artchitecture</a></li>
+									<li><a href="#">Consulting</a></li>
+									<li><a href="#">Building</a></li>
+									<li><a href="#">Clean</a></li>
+									<li><a href="#">Industry</a></li>
+									<li><a href="#">Interior</a></li>
+									<li><a href="#">worker</a></li>
+									<li><a href="#">html</a></li>
+									<li><a href="#">css</a></li>
+									<li><a href="#">php</a></li>
+									<li><a href="#">photoshop</a></li>
+									<li><a href="#">themeforest</a></li>
+									<li><a href="#">template</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Process -->
+		<section class="process">
+			<div class="container">
+				<div class="row m-l-r-5">
+					<div class="col-sm-6 col-md-3 p-5">	
+						<div class="media ht-media">
+							<div class="media-left">
+								<i class="fa fa-cogs color-3"></i>
+							</div>
+							<div class="media-body">
+								<h5 class="media-heading color-3">Free Shipping</h5>
+								Donec sed odio dui
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 p-5">	
+						<div class="media ht-media">
+							<div class="media-left">
+								<i class="fa fa-send color-7"></i>
+							</div>
+							<div class="media-body">
+								<h5 class="media-heading color-7">Free Shipping</h5>
+								Donec sed odio dui
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 p-5">	
+						<div class="media ht-media">
+							<div class="media-left">
+								<i class="fa fa-car color-4"></i>
+							</div>
+							<div class="media-body">
+								<h5 class="media-heading color-4">100% Monney Back</h5>
+								Donec sed odio dui
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 p-5">	
+						<div class="media ht-media">
+							<div class="media-left">
+								<i class="fa fa-ship color-5"></i>
+							</div>
+							<div class="media-body">
+								<h5 class="media-heading color-5">100% Monney Back</h5>
+								Donec sed odio dui
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Footer -->
+		{% include "website_footer.html" %}
+		<!-- jQuery -->
+		<script src="{% static "js/jquery/jquery-2.2.4.min.js" %}"></script>
+		<!-- JqueryUI -->
+		<script src="{% static "js/jquery/jquery-ui.js" %}"></script>
+		<!-- Bootstrap -->
+		<script src="{% static "js/bootstrap/bootstrap.min.js" %}"></script>
+		<!-- Owl-coursel -->
+		<script src="{% static "js/owl-coursel/owl.carousel.js" %}"></script>
+		<!-- Magnific-popup -->
+		<script src="{% static "js/magnific-popup/jquery.magnific-popup.min.js" %}"></script>
+		<!-- Script -->
+		<script src="{% static "js/script.js" %}"></script>
+	</body>
+</html>

@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Place order</title>
+		<link rel="icon" href="{% static 'images/favicon.ico'%}">
+		<!-- JqueryUI -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/jquery-ui.css" %}">
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.min.css" %}">
+		<!-- Awesome font icons -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/font-awesome.min.css" %}" media="screen">
+		<!-- Owlcoursel -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/owl-coursel/owl.carousel.css" %}">
+		<link rel="stylesheet" type="text/css" href="{% static "css/owl-coursel/owl.transitions.css" %}">
+		<!-- Magnific-popup -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/magnific-popup/magnific-popup.css" %}">
+		<!-- Style -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}" media="screen">
+		<!-- Fw -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/fw.css" %}" media="screen">
+	</head>
+	<body>
+
+		<div class="preloader">
+			<i class="fa fa-spinner"></i>
+		</div>
+		{% include "website_header.html" %}
+		<!-- Breadcrumb -->
+		<div class="container">
+			<ul class="breadcrumb">
+				<li><a href="#"><i class="fa fa-home m-r-5"></i>Home</a></li>
+				<li><a href="#">Shopping cart</a></li>
+				<li>Checkout</li>
+			</ul>
+		</div>
+		<section class="m-t-0">
+			<div class="container">
+				<div class="thumb p-30">
+					<div id="content">
+						<h2 class="title">Checkout</h2>
+						<div class="panel-group">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="#collapse5" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle collapsed" aria-expanded="false">Step 6: Confirm Order
+											<i class="fa fa-caret-down"></i>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse5" class="panel-collapse collapse" role="tabpanel">
+									<div class="panel-body">
+										<div class="table-responsive">
+												<div>
+													<div class="table-div">
+														<div class="row m-0 table-heading">
+															<div class="col col-xs-1"><strong>Image</strong></div>
+															<div class="col col-xs-2"><strong>Model</strong></div>
+															<div class="col col-xs-2"><strong>Quantity</strong></div>
+															<div class="col col-xs-2"><strong>Unit Price</strong></div>
+															<div class="col col-xs-2"><strong>Total</strong></div>
+														</div>
+														{% for item in cart %}
+															{% with product=item.product %}
+																<div class="row m-0 table-content">
+																	<div class="col col-xs-1">
+																		<a href="{{ request.scheme }}://{{ request.get_host }}/products/{{product.id}}"><img src="/{{product.mainimage.url}}" width="70" alt="product" title="{{product.header}}"></a>
+																	</div>
+																	<div class="col col-xs-2"><a href="{{ request.scheme }}://{{ request.get_host }}/products/{{product.id}}">{{product.model}}</a></div>
+																	<div class="col col-xs-2">{{item.quantity}}</div>
+																	<div class="col col-xs-2">֏{{item.price}}</div>
+																	<div class="col col-xs-2">֏{{item.total_price}}</div>
+																</div><!--end row-->
+															{%endwith%}
+														{%endfor%}
+													</div>
+												</div>
+
+
+
+												<div class="row">
+													<div class="col-xs-5 pull-right">
+														<div class="total table-div">
+															<ul class="table-content">
+																<li class="row m-0">
+																	<div class="col col-xs-6 text-right">
+																		<strong class=" text-right">Sub-Total:</strong>
+																	</div>
+																	<div class="col col-xs-6">
+																		֏{{cart.get_total_price}}
+																	</div>
+																</li>
+																<li class="row m-0">
+																	<div class="col col-xs-6">
+																		<strong>Eco Tax (0):</strong>
+																	</div>
+																	<div class="col col-xs-6">
+																		֏{{cart.get_shipping_price}}
+																	</div>
+																</li>
+																<li class="row m-0">
+																	<div class="col col-xs-6">
+																		<strong>Total:</strong>
+																	</div>
+																	<div class="col col-xs-6">
+																		֏{{cart.get_with_shipping_price}}
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+
+										</div>
+										<div class="buttons m-t-30">
+											<div class="pull-right">
+												<button type="button" class="btn ht-btn bg-3">Confirm Order</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<form action="." method="post" class="order-form">
+								{{form.as_p}}
+								<p><input type="submit" value="Place order"></p>
+								{% csrf_token%}
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		{% include "website_process.html" %}
+		<!-- Footer -->
+		{% include "website_footer.html" %}
+		<!-- jQuery -->
+		{% include "website_js.html" %}
+	</body>
+</html>
