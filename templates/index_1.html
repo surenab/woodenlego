@@ -1,0 +1,197 @@
+{% load static %}
+{% load i18n %}
+{% load mathfilters %}
+
+<!DOCTYPE html>
+<style>
+.example {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.example img {
+  width: 30vw;
+}
+
+.example-cover img {
+  object-fit: scale-down;
+}
+
+.example-contain img {
+  object-fit: scale-down;
+}
+</style>
+<html lang="zxx">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{% blocktrans %}Crepundy Home Page{% endblocktrans %}</title>
+		<link rel="icon" href="{% static 'images/favicon.ico'%}">
+		<!-- JqueryUI -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/jquery-ui.css" %}">
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.min.css" %}">
+		<!-- Awesome font icons -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/font-awesome.min.css" %}" media="screen">
+		<!-- Owlcoursel -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/owl-coursel/owl.carousel.css" %}">
+		<link rel="stylesheet" type="text/css" href="{% static "css/owl-coursel/owl.transitions.css" %}">
+		<!-- Magnific-popup -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/magnific-popup/magnific-popup.css" %}">
+		<!-- Style -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}" media="screen">
+		<!-- Fw -->
+		<link rel="stylesheet" type="text/css" href="{% static "css/fw.css" %}" media="screen">
+	</head>
+	<body class="bg-white">
+		<div class="preloader">
+			<div class="preloader">
+			<i class="fa fa-spinner"></i>
+		</div>
+		</div>
+		{% include "website_header.html" %}
+		<!-- Sideshow -->
+		<div class="sideshow">
+			<div class="container text-center">
+				<div class="owl m-b-60" data-items="4" data-itemsDesktop="3" data-itemsDesktopSmall="2" data-itemsTablet="2" data-itemsMobile="1" data-transitionstyle="fade" data-singleItem="true" data-autoplay="true" data-pag="false" data-buttons="false">
+					<img src="{% static "images/banner-4.png" %}" %}"  alt="image">
+					<img src="{% static "images/banner-6.png" %}" %}"  alt="image">
+					<img src="{% static "images/banner-7.png" %}" %}"  alt="image">
+				</div>
+				<div class="cloud-0"></div>
+				<div class="cloud-3"></div>
+				<div class="cloud-1"></div>
+				<div class="cloud-2"></div>
+			</div>
+		</div>
+		<div class="top-pie"></div>
+
+		<!-- Product tabs-->
+		<section class="m-t-40">
+			<div class="container">
+				<div class="ht-tabs ht-tabs-product text-center">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active">
+							<a href="#tab-description" aria-controls="tab-description" role="tab" data-toggle="tab">{% blocktrans %}New Products{% endblocktrans %}</a>
+						</li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="tab-description">
+							<div class="row product-1">
+								{% for product in toy_list %}
+									<div class="col-sm-6 col-md-3">
+									<!-- Product item -->
+									<div class="product-item hover-img">
+										<div class="example example-cover">
+											<a href={{ request.scheme }}://{{ request.get_host }}/products/{{product.id}} class="product-img">
+												<img src="/{{product.mainimage.url}}" alt="image">
+											</a>
+										</div>
+										<div class="product-caption">
+											<h4 class="product-name">
+												<a href={{ request.scheme }}://{{ request.get_host }}/products/{{product.id}}>{{product.header}}</a>
+											</h4>
+											<div class="product-price-group">
+												<span class="product-price">֏{{product.real_price}}</span>
+											</div>
+										</div>
+										<div class="absolute-caption">
+											<a href="#"><i class="fa fa-heart-o"></i></a>
+											<a href="#"><i class="fa fa-exchange"></i></a>
+											<a href="#"><i class="fa fa-cart-plus"></i></a>
+										</div>
+									</div>
+								</div>
+								{%endfor%}
+
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="tab-review">
+						...............
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Hot Deal -->
+
+		<p>{{saleproduct}}</p>
+		<section>
+			<div class="container">
+				<div class="banner banner-2x no-bg-img-xs bg-img-3 bg-size-1 bg-main bor-rand-15" style="background:url(../{{sale.mainimage.url}}); background-size: 60%;" >
+					<div class="caption">
+						<h1 class="heading-size-3 color-tran">{% blocktrans %}Gift for Kids{% endblocktrans %}</h1>
+						<h4 class="heading-size-2 color-3 f-normal"><strong class="f-bold">{{sale_perc}}%</strong> {% blocktrans %}off{% endblocktrans %}</h4>
+						<h3 class="heading-size-6">{% blocktrans %}FREE SHIPPING in Yerevan{% endblocktrans %}</h3>
+						<a href="{{ request.scheme }}://{{ request.get_host }}/products/{{sale.id}}" class="btn ht-btn ht-btn-2x ht-btn-bg-2">{% blocktrans %}Shop now{% endblocktrans %}</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+		<!-- Product -->
+		<section>
+			<div class="container text-center">
+				<h3 class="title">{% blocktrans %}Featured Product{% endblocktrans %}</h3>
+				<div class="row product-1">
+					<div class="owl" data-items="4" data-itemsDesktop="3" data-itemsDesktopSmall="2" data-itemsTablet="2" data-itemsMobile="1" data-transitionstyle="backslide" data-singleItem="false" data-autoplay="false" data-pag="false" data-buttons="true">
+						{% for product in toy_list_feature %}
+							<div class="col-lg-12">
+							<!-- Product item -->
+							<div class="product-item hover-img">
+								<div class="example example-cover">
+									<a href={{ request.scheme }}://{{ request.get_host }}/products/{{product.id}} class="product-img">
+										<img src="/{{product.mainimage.url}}" %}" alt="image">
+									</a>
+								</div>
+								<div class="product-caption">
+									<h4 class="product-name">
+										<a href={{ request.scheme }}://{{ request.get_host }}/products/{{product.id}}>{{product.header}}</a>
+									</h4>
+									<div class="product-price-group">
+										<span class="product-price">֏{{product.real_price}}</span>
+									</div>
+								</div>
+								<div class="absolute-caption">
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-exchange"></i></a>
+									<a href="#"><i class="fa fa-cart-plus"></i></a>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="text-center">
+			<div class="container">
+				<div class="newsletter">
+					<h3 class="title">{% blocktrans %}Newsletter{% endblocktrans %}</h3>
+					<p>{% blocktrans %}Subsribe to get news from US {% endblocktrans %}</p>
+					<form>
+						<input type="text" class="form-item" placeholder="Enter your email">
+						<button type="button"><i class="fa fa-paper-plane-o"></i></button>
+					</form>
+				</div>
+			</div>
+		</section>
+		{% include "website_process.html" %}
+		<!-- Logo -->
+		{% include "website_logos.html" %}
+		<div class="bg-landscape"></div>
+		<!-- Footer -->
+		{% include "website_footer.html" %}
+		<!-- jQuery -->
+		{% include "website_js.html" %}
+	</body>
+</html>

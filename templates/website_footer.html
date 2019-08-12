@@ -1,0 +1,53 @@
+{% load i18n %}
+{% load static %}
+		<footer class="color-inher">
+			<div class="bot-pie"></div>
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3 m-b-xs-30">
+							<h3 class="title">{% blocktrans %}Infomation{% endblocktrans %}</h3>
+							<ul>
+								<li><a href="{% url 'wlwebsite:about' %}">{% blocktrans %}About Us{% endblocktrans %}</a></li>
+								<li><a href="{% url 'wlwebsite:delivery' %}">{% blocktrans %}Delivery Information{% endblocktrans %}</a></li>
+								<li><a href="{% url 'wlwebsite:privacy' %}">{% blocktrans %}Privacy Policy{% endblocktrans %}</a></li>
+								<li><a href="{% url 'wlwebsite:terms' %}">{% blocktrans %}Terms & Conditions{% endblocktrans %}</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-3 m-b-xs-30">
+							<h3 class="title">{% blocktrans %}My Account{% endblocktrans %}</h3>
+							<ul>
+								<li><a href="#">{% blocktrans %}My Account{% endblocktrans %}</a></li>
+								<li><a href="#">{% blocktrans %}Order History{% endblocktrans %}</a></li>
+								<li><a href="#">{% blocktrans %}Wish List{% endblocktrans %}</a></li>
+								<li><a href="#">{% blocktrans %}Guide use{% endblocktrans %}</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-3 m-b-xs-30">
+							<h3 class="title">{% blocktrans %}Crepundy{% endblocktrans %}</h3>
+							<ul>
+								<li><a href="{% url 'wlwebsite:about' %}">{% blocktrans %}Brand{% endblocktrans %}</a></li>
+								<li><a href="{% url 'wlwebsite:aboutowners' %}">{% blocktrans %}About Owners{% endblocktrans %}</a></li>
+								<li><a href="{% url 'wlwebsite:ideas' %}">{% blocktrans %}Ideas{% endblocktrans %}</a></li>
+								<li><a href="{% url 'wlwebsite:feature' %}">{% blocktrans %}Feature{% endblocktrans %}</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-3 m-b-xs-30">
+							<h3 class="title">{% blocktrans %}Follow us{% endblocktrans %}</h3>
+							<ul class="social_link">
+								<li><a href="https://www.facebook.com/crepundy.toys"><i class="fa fa-facebook"></i>{% blocktrans %}Facebook{% endblocktrans %}</a></li>
+								<li><a href="#"><i class="fa fa-instagram"></i>{% blocktrans %}Instagram{% endblocktrans %}</a></li>
+								<li><a href="https://twitter.com/crepundy"><i class="fa fa-twitter"></i>{% blocktrans %}Tiwtter{% endblocktrans %}</a></li>
+								<li><a href="https://www.linkedin.com/company/crepundy/"><i class="fa fa-linkedin"></i>{% blocktrans %}Linedin{% endblocktrans %}</a></li>
+								<li><a href="https://www.linkedin.com/company/crepundy/"><i class="fa fa-phone"></i>+37477783777 </a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bt">
+				<div class="container">
+					<p>� 2019 {% blocktrans %}Designed by{% endblocktrans %} <a href="https://www.linkedin.com/company/vision-of-future">{% blocktrans %}Vision of Future{% endblocktrans %}</a>. {% blocktrans %}All rights reserved{% endblocktrans %}      <a href="support@crepundy.com">{% blocktrans %}Contact Email{% endblocktrans %}: Support@crepundy.com</a></p>
+				</div>
+			</div>
+		</footer>

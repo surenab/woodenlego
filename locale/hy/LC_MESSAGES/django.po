@@ -1,0 +1,308 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-23 00:02+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\templates\index_1.html:27
+msgid "Crepundy Home Page"
+msgstr "Կրեպունդի տուն"
+
+#: .\templates\index_1.html:75
+msgid "New Products"
+msgstr "Նոր Ապրանքներ"
+
+#: .\templates\index_1.html:124
+msgid "Gift for Kids"
+msgstr "Նվեր երեխաների համար"
+
+#: .\templates\index_1.html:125
+msgid "off"
+msgstr "զեղջ"
+
+#: .\templates\index_1.html:126
+msgid "FREE SHIPPING in Yerevan"
+msgstr "ԱՆՎՃԱՐ ԱՌԱՔՈՒՄ Երեւանում"
+
+#: .\templates\index_1.html:127
+msgid "Shop now"
+msgstr "Գնիր հիմա"
+
+#: .\templates\index_1.html:141
+msgid "Featured Product"
+msgstr "Հատուկ ապրանքներ"
+
+#: .\templates\index_1.html:177
+msgid "Newsletter"
+msgstr "Լրատու"
+
+#: .\templates\index_1.html:178
+msgid "Subsribe to get news from US "
+msgstr "Միացեք մեզ նորությունների արագ իմանալու համար"
+
+#: .\templates\website_footer.html:9
+msgid "Infomation"
+msgstr "Տեղեկատվություն"
+
+#: .\templates\website_footer.html:11
+#, fuzzy
+#| msgid "About us"
+msgid "About Us"
+msgstr "Մեր մասին"
+
+#: .\templates\website_footer.html:12
+msgid "Delivery Information"
+msgstr "Առաքման մասին տեղեկություններ"
+
+#: .\templates\website_footer.html:13
+msgid "Privacy Policy"
+msgstr "Գաղտնիության քաղաքականություն"
+
+#: .\templates\website_footer.html:14
+msgid "Terms & Conditions"
+msgstr "Պայմաններ եւ դրույթներ"
+
+#: .\templates\website_footer.html:18 .\templates\website_footer.html:20
+#: .\templates\website_header.html:26
+msgid "My Account"
+msgstr "Իմ հաշիվը"
+
+#: .\templates\website_footer.html:21
+msgid "Order History"
+msgstr "Պատվերների պատմություն"
+
+#: .\templates\website_footer.html:22
+#, fuzzy
+#| msgid " Wishlist "
+msgid "Wish List"
+msgstr "Ցանկությունների ցանկ"
+
+#: .\templates\website_footer.html:23
+msgid "Guide use"
+msgstr "Ուղեցույց"
+
+#: .\templates\website_footer.html:27
+msgid "Crepundy"
+msgstr "Կրեպունդի"
+
+#: .\templates\website_footer.html:29
+msgid "Brand"
+msgstr "Ապրանքանիշ"
+
+#: .\templates\website_footer.html:30
+#, fuzzy
+#| msgid "About us"
+msgid "About Owners"
+msgstr "Մեր մասին"
+
+#: .\templates\website_footer.html:31
+msgid "Ideas"
+msgstr "Գաղափարներ"
+
+#: .\templates\website_footer.html:32
+msgid "Feature"
+msgstr "Հատկություններ"
+
+#: .\templates\website_footer.html:36
+msgid "Follow us"
+msgstr "Հետեւեք մեզ"
+
+#: .\templates\website_footer.html:38
+msgid "Facebook"
+msgstr "Facebook"
+
+#: .\templates\website_footer.html:39
+msgid "Instagram"
+msgstr "Instagram"
+
+#: .\templates\website_footer.html:40
+msgid "Tiwtter"
+msgstr "Tiwtter"
+
+#: .\templates\website_footer.html:41
+msgid "Linedin"
+msgstr "Linedin"
+
+#: .\templates\website_footer.html:50
+msgid "Designed by"
+msgstr "Նախագծված է"
+
+#: .\templates\website_footer.html:50
+msgid "Vision of Future"
+msgstr "Ապագայի տեսլականը"
+
+#: .\templates\website_footer.html:50
+msgid "All rights reserved"
+msgstr "Բոլոր իրավունքները պաշտպանված են"
+
+#: .\templates\website_footer.html:50
+#, fuzzy
+#| msgid "Contact Us"
+msgid "Contact Email"
+msgstr "Կապ մեզ հետ"
+
+#: .\templates\website_header.html:11
+msgid "Search"
+msgstr "Փնտրել"
+
+#: .\templates\website_header.html:18
+msgid " Wishlist "
+msgstr "Ցանկությունների ցանկ"
+
+#: .\templates\website_header.html:23
+msgid "Hi"
+msgstr "Ողջու՜յն"
+
+#: .\templates\website_header.html:32
+msgid "My Orders"
+msgstr "Իմ պատվերները"
+
+#: .\templates\website_header.html:33
+#, fuzzy
+#| msgid "Cart"
+msgid "My Cart"
+msgstr "զամբյուղ"
+
+#: .\templates\website_header.html:34
+msgid "Log out"
+msgstr "Դուրս գալ"
+
+#: .\templates\website_header.html:36
+msgid "Login"
+msgstr "Մուտք"
+
+#: .\templates\website_header.html:37
+msgid "Register"
+msgstr "Գրանցվել"
+
+#: .\templates\website_header.html:79
+msgid "Sub-Total"
+msgstr "Ընդհանուր առմամբ"
+
+#: .\templates\website_header.html:87
+msgid "Ship"
+msgstr "Առաքում"
+
+#: .\templates\website_header.html:105
+msgid "Total"
+msgstr "Ընդհանուր"
+
+#: .\templates\website_header.html:117
+msgid "Checkout"
+msgstr "Գնել"
+
+#: .\templates\website_header.html:118
+msgid "Cart"
+msgstr "զամբյուղ"
+
+#: .\templates\website_header.html:145
+msgid "Lorem ipsum dolor"
+msgstr "Lorem ipsum dolor"
+
+#: .\templates\website_header.html:154
+msgid "Home"
+msgstr "Տուն"
+
+#: .\templates\website_header.html:156
+msgid "About us"
+msgstr "Մեր մասին"
+
+#: .\templates\website_header.html:158
+msgid "Toys"
+msgstr "Խաղալիքներ"
+
+#: .\templates\website_header.html:161
+msgid "Blogs & Events"
+msgstr "Բլոգներ եւ իրադարձություններ"
+
+#: .\templates\website_header.html:164
+msgid "Contact Us"
+msgstr "Կապ մեզ հետ"
+
+#: .\templates\website_process.html:13
+msgid "Designed for kids and adults also"
+msgstr "Նախագծված է երեխաների եւ մեծահասակների համար"
+
+#: .\templates\website_process.html:14
+msgid "For kids to develop their imagination"
+msgstr "Երեխաները կարող են զարգացնել իրենց երեւակայությունը"
+
+#: .\templates\website_process.html:15
+msgid "For adults to play with their kids"
+msgstr "Մեծահասակների համար խաղալու իրենց երեխաների հետ"
+
+#: .\templates\website_process.html:16
+msgid "For family to play with together"
+msgstr "Ընտանիքի համար խաղալ միասին"
+
+#: .\templates\website_process.html:26
+msgid "Low Shipping Cost"
+msgstr "Ցածր առաքման արժեք"
+
+#: .\templates\website_process.html:27
+msgid "Around Yerevan shipping cost is"
+msgstr "Երեւան ուղեւորափոխադրման արժեքը"
+
+#: .\templates\website_process.html:28
+msgid "Around Armenia shipping maximum cost is"
+msgstr "Հայաստան առաքման առավելագույն արժեքը"
+
+#: .\templates\website_process.html:29
+msgid "Buy from our suggested shops to not pay more"
+msgstr "Գնել մեր առաջարկած խանութներից ավելի շատ չվճարելու համար"
+
+#: .\templates\website_process.html:39
+msgid "Monney Back"
+msgstr "Money Back"
+
+#: .\templates\website_process.html:40
+msgid "If you find toy not interesting we will do money back."
+msgstr "Եթե գտեք խաղալիքը հետաքրքիր չէ, մենք գումարը կվերադարձնենք:"
+
+#: .\templates\website_process.html:41
+msgid "If you find toy is broken we will do money back."
+msgstr "Եթե ​​դուք գտեք խաղալիքը կոտրված, մենք գումարը կվերադարձնենք:"
+
+#: .\templates\website_process.html:42
+msgid "If you find toy heart your baby we will do money back."
+msgstr "Եթե ​​խաղալիքը վնաս հասցնի ձեր երեխային, մենք գումարը կվերադարձնենք"
+
+#: .\templates\website_process.html:52
+msgid "The Benefits of our Toys"
+msgstr "Խաղալիքների առավելությունները"
+
+#: .\templates\website_process.html:53
+msgid "Problem solving and learning cause and effect."
+msgstr "Խնդիրը լուծելու եւ պատճառահետեվանքային կապի ունակության զարգացում"
+
+#: .\templates\website_process.html:54
+msgid "Development of fine and gross motor skills."
+msgstr "Ճշգրիտ եւ համատարած շարժիչ հմտությունների զարգացում:"
+
+#: .\templates\website_process.html:55
+msgid "Nurturing their creativity and imagination."
+msgstr "ստեղծագործական եւ երեւակայության կերտումը:"
+
+#: .\woodenlego\settings.py:182
+msgid "English"
+msgstr ""
+
+#: .\woodenlego\settings.py:183
+msgid "Armenian"
+msgstr ""
+
+#~ msgid "My cart"
+#~ msgstr "Իմ զամբյուղը"
